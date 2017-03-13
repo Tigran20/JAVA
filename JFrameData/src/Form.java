@@ -18,6 +18,8 @@ public class Form {
 
     private JLabel city;
     private JTextField textField5;
+    
+    private JButton formBtn;
 
 
     public JPanel getRootPanel() {
