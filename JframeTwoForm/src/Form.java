@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Form {
     private JPanel rootPanel;
@@ -9,6 +10,28 @@ public class Form {
     private JLabel name;
     private JLabel name2;
     private JButton SwitchBtn;
+    private JPanel secondPanel;
+
+    public Form (){
+        secondPanel.setLayout(new BoxLayout(secondPanel, BoxLayout.X_AXIS));
+
+        secondPanel.add((Box.createRigidArea(new Dimension(40, 0))));
+        secondPanel.add(lastName);
+        secondPanel.add((Box.createRigidArea(new Dimension(6, 0))));
+        secondPanel.add(textField);
+        secondPanel.add((Box.createRigidArea(new Dimension(15, 0))));
+        secondPanel.add(name);
+        secondPanel.add((Box.createRigidArea(new Dimension(6, 0))));
+        secondPanel.add(textField1);
+        secondPanel.add((Box.createRigidArea(new Dimension(15, 0))));
+        secondPanel.add(name2);
+        secondPanel.add((Box.createRigidArea(new Dimension(6, 0))));
+        secondPanel.add(textField2);
+        secondPanel.add((Box.createRigidArea(new Dimension(15, 0))));
+        secondPanel.add(getSwitchBtn());
+    }
+
+
 
     public JPanel getRootPanel() {
         return rootPanel;

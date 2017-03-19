@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Form2">
-  <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="f5c4f" class="javax.swing.JLabel" binding="userData">
-        <constraints/>
-        <properties>
-          <text value="Ф.И.О."/>
-        </properties>
-      </component>
-      <component id="b03ba" class="javax.swing.JTextField" binding="textField">
-        <constraints/>
-        <properties>
-          <maximumSize width="300" height="28"/>
-          <minimumSize width="300" height="28"/>
-          <opaque value="true"/>
-          <preferredSize width="300" height="28"/>
-        </properties>
-      </component>
-      <component id="d9909" class="javax.swing.JButton" binding="SwitchBtn2">
-        <constraints/>
-        <properties>
-          <text value="Переключить"/>
-        </properties>
-      </component>
+      <grid id="a5bf1" binding="secondPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f5c4f" class="javax.swing.JLabel" binding="userData">
+            <constraints/>
+            <properties>
+              <text value="Ф.И.О."/>
+            </properties>
+          </component>
+          <component id="b03ba" class="javax.swing.JTextField" binding="textField">
+            <constraints/>
+            <properties>
+              <maximumSize width="300" height="28"/>
+              <minimumSize width="300" height="28"/>
+              <opaque value="true"/>
+              <preferredSize width="300" height="28"/>
+            </properties>
+          </component>
+          <component id="d9909" class="javax.swing.JButton" binding="switchBtn2">
+            <constraints/>
+            <properties>
+              <text value="Переключить"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

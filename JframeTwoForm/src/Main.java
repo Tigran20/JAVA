@@ -11,7 +11,7 @@ public class Main {
         //создание формы по умолчанию
         frame.setContentPane(form.getRootPanel());
         frame.setTitle("FirstForm");
-        frame.setSize(800, 600);
+        frame.setSize(700, 350);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -38,7 +38,7 @@ public class Main {
                     {
                         frame.setContentPane(form2.getRootPanel());
                         frame.setTitle("SecondForm");
-                        frame.setSize(800, 599);
+                        frame.setSize(700, 350);
                         frame.setLocationRelativeTo(null);
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         frame.setVisible(true);
@@ -62,7 +62,7 @@ public class Main {
                 {
                     frame.setContentPane(form2.getRootPanel());
                     frame.setTitle("SecondForm");
-                    frame.setSize(800, 600);
+                    frame.setSize(700, 350);
                     frame.setLocationRelativeTo(null);
                     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                     frame.setVisible(true);
@@ -78,7 +78,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 frame.setContentPane(form.getRootPanel());
                 frame.setTitle("FirstForm");
-                frame.setSize(800, 600);
+                frame.setSize(700, 350);
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                 frame.setVisible(true);
