@@ -9,7 +9,9 @@
     <children>
       <grid id="701c7" binding="secondPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="Center"/>
-        <properties/>
+        <properties>
+          <maximumSize width="599" height="46"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="67dc2" class="javax.swing.JLabel" binding="lastName">
