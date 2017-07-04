@@ -1,10 +1,29 @@
 
 public class Account {
-    private int number;
+    private String number;
     private double balance;
     private String customerName;
     private String customerEmail;
-    private int customerPhoneNumber;
+    private String customerPhoneNumber;
+
+    public Account ()
+    {
+        this("1234", 0.0, "default", "default", "default");
+    }
+
+    public Account(String number, double balance, String customerName, String customerEmail, String customerPhoneNumber)
+    {
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+    public Account(String customerName, String customerEmail, String customerPhoneNumber) {
+        this("99999", 105.0, customerName, customerEmail, customerPhoneNumber);
+        System.out.println("Конструктор с параметрами - 2");
+    }
 
     public void deposit(double depositAmount)
     {
@@ -25,16 +44,11 @@ public class Account {
         }
     }
 
-    public Account(String customerName, int customerPhoneNumber) {
-        this.customerName = customerName;
-        this.customerPhoneNumber = customerPhoneNumber;
-    }
-
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -62,11 +76,12 @@ public class Account {
         this.customerEmail = customerEmail;
     }
 
-    public int getCustomerPhoneNumber() {
+    public String getCustomerPhoneNumber() {
         return customerPhoneNumber;
     }
 
-    public void setCustomerPhoneNumber(int customerPhoneNumber) {
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
     }
+
 }
