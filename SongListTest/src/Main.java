@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static List<Album> albums = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
@@ -30,7 +30,7 @@ public class Main {
         albums.add(anotherAlbum);
 
 
-        LinkedList<Song> playList = new LinkedList<>();
+        List<Song> playList = new ArrayList<>();
         albums.get(0).addToPlayList(1, playList);
         albums.get(0).addToPlayList(2, playList);
         albums.get(0).addToPlayList(3, playList);
@@ -41,7 +41,7 @@ public class Main {
         albums.get(0).addToPlayList(8, playList);
 
 
-        LinkedList<Song> playList2 = new LinkedList<>();
+        List<Song> playList2 = new ArrayList<>();
         albums.get(1).addToPlayList(1, playList2);
         albums.get(1).addToPlayList(2, playList2);
         albums.get(1).addToPlayList(3, playList2);
@@ -53,7 +53,7 @@ public class Main {
 
     }
 
-    private static void playAlbum(LinkedList<Song> playList, LinkedList<Song> playList2) {
+    private static void playAlbum(List<Song> playList, List<Song> playList2) {
         boolean quit = false;
         if (playList.size() == 0)
         {
@@ -90,7 +90,7 @@ public class Main {
     }
 
 
-    private static void play(LinkedList<Song> playList) {
+    private static void play(List<Song> playList) {
         boolean quit = false;
         boolean forward = true;
 
@@ -222,7 +222,7 @@ public class Main {
                 "3 - вывести список действий\n");
     }
 
-    private static void printList(LinkedList<Song> playList){
+    private static void printList(List<Song> playList){
         Iterator<Song> iterator = playList.iterator();
         System.out.println("===========================");
 
