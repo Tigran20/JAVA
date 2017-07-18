@@ -15,7 +15,7 @@ public class Main {
             return;
         }
 
-        List<Artist> artists = datasourse.queryArtists();
+        List<Artist> artists = datasourse.queryArtists(5);
         if(artists == null) {
             System.out.println("Нет артистов!");
             return;
@@ -26,8 +26,14 @@ public class Main {
             System.out.println("ID = " + artist.getId() + ", Name = " + artist.getName());
         }
 
+        List<String > albumsForArtists =
+                datasourse.queryAlbumsForArtist("Iron Maiden", Datasourse.ORDER_BY_ASC);
+
+        for(String album : albumsForArtists)
+        {
+            System.out.println(album);
+        }
+
         datasourse.close();
-
-
     }
 }
